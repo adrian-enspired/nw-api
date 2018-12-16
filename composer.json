@@ -1,0 +1,27 @@
+{
+  "name": "nocworx/nx-api",
+  "version": "0.1-alpha",
+  "description": "NocWorx Client API Controller",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": "^7.2",
+    "nocworx/core": "18.12.01",
+    "slim/slim": "^3.11"
+  },
+  "autoload": {},
+  "require-dev": {
+    "nocworx/phpcs": "^1",
+    "phan/phan": "^1",
+    "phpunit/phpunit": "^7.0"
+  },
+  "scripts": {
+    "tests:unit": "vendor/bin/phpunit",
+    "tests:phan": "vendor/bin/phan",
+    "tests:phpcs": "vendor/bin/phpcs --standard=NocWorx src tests"
+  },
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/nocworx/core" },
+    { "type": "vcs", "url": "https://github.com/nocworx/phpcs" }
+  ]
+}

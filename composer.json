@@ -5,8 +5,15 @@
   "type": "project",
   "license": "proprietary",
   "require": {
-    "php": "^7.2",
+    "php": "^7.1",
+
     "nocworx/core": "18.12.01",
+    "omnipay/authorizenet": "dev-master#c109d81",
+    "bjsmasth/php-salesforce-rest-api": "dev-master",
+    "php-opencloud/openstack": "dev-master#ab8ae02",
+    "phpgangsta/googleauthenticator": "dev-master#3baa997",
+    "datasets/country-codes": "dev-master as 1.0",
+
     "slim/slim": "^3.11"
   },
   "autoload": {},
@@ -22,6 +29,34 @@
   },
   "repositories": [
     { "type": "vcs", "url": "https://github.com/nocworx/core" },
-    { "type": "vcs", "url": "https://github.com/nocworx/phpcs" }
+    { "type": "vcs", "url": "https://github.com/nocworx/lib" },
+    { "type": "vcs", "url": "https://github.com/nocworx/lib-cloud" },
+    { "type": "vcs", "url": "https://github.com/nocworx/phpcs" },
+    { "type": "vcs", "url": "https://github.com/nexcess/openstack" },
+    { "type": "vcs", "url": "https://github.com/nexcess/php-salesforce-rest-api" },
+    { "type": "package",
+      "package": {
+        "name": "duosecurity/duo_php",
+        "version": "1.0.0",
+        "source": {
+          "url": "https://github.com/duosecurity/duo_php/",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "datasets/country-codes",
+        "version": "dev-master as 1.0",
+        "source": {
+          "url": "https://github.com/datasets/country-codes",
+          "type": "git",
+          "reference": "origin/master"
+        }
+      }
+    },
+    { "type": "vcs", "url": "https://github.com/alexander-schranz/iso-3166-2" }
   ]
 }

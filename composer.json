@@ -16,7 +16,11 @@
 
     "slim/slim": "^3.11"
   },
-  "autoload": {},
+  "autoload": {
+    "psr-4": {
+      "NocWorx\\Api\\": "src/"
+    }
+  },
   "require-dev": {
     "nocworx/phpcs": "^1",
     "phan/phan": "^1",

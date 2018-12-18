@@ -12,7 +12,7 @@ use NocWorx\Api\ {
   RouteGroup
 };
 
-use NocWorx\App;
+use NocWorx\App as NocWorx;
 
 use NocWorx\Lib\App\Registry;
 
